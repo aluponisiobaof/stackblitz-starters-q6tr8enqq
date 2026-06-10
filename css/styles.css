@@ -57,6 +57,9 @@ nav a[aria-current='page'] {
   /*border-bottom: #555 solid 3px;*/
   box-shadow: 5px 4px darkgray;
 }
+nav a:hover{
+  background-color: rgb(204, 0, 255);
+}
 /*fin de nav*/
 /*comienzo de main*/
 section{
@@ -104,6 +107,9 @@ section div{
 #video {
 width: 600px;
 height: 300px;
+}
+#presentacion{
+  height: 600px;
 }
 .videos_locales{
 background-color: #555;
