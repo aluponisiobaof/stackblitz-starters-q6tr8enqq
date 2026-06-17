@@ -200,3 +200,37 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+/***** /*Contenedor principal:Divide el diseño en dos columnas (Continente y Paises)*/
+.campeones{
+display: grid;
+grid-template-columns: 1fr 3fr; /*25% para continente, 75% para paises*/
+border: 2px solid rgb(0, 0, 0);
+width: 100%;
+}
+/*Columna izquierda: Se convierte en otro Grid para organizar el contenido interno*/
+.continente{
+border-right: 2px solid black;
+padding: 15px 10px;
+font-weight: bold;
+font-size: 14px;
+}
+/*Columna derecha: Se convierte en otro Grid para organizar el contenido interno*/
+.paises{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+/*El titulo del pais ocupa las dos columnas*/
+.pais{
+  grid-column: span 2;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 2px solid black;
+  }
+
+  .foto{
+min-height: 120px;
+padding: 35px 10px 10px 10px;
+font-size: 11px;
+border-bottom: 2px solid black;
+  }
